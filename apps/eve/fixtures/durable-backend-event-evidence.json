@@ -1,0 +1,92 @@
+{
+  "schema_version": "event-evidence-read-1.0",
+  "candidate_id": "EVENT-SUPERVISION-1",
+  "candidate_revision": 3,
+  "candidate_state": "NEEDS_REVIEW",
+  "updated_at": "2026-08-22T18:00:00+00:00",
+  "bundle": {
+    "candidate_id": "EVENT-SUPERVISION-1",
+    "incident_id": "FR-26-00001",
+    "incident_candidate_id": null,
+    "viewpoint": {
+      "longitude": 5.35,
+      "latitude": 44.74,
+      "horizontal_accuracy_m": 25,
+      "altitude_m": null,
+      "label": "Synthetic viewpoint",
+      "yaw_deg": 42,
+      "fov_deg": 30,
+      "origin": "USER_PLACED"
+    },
+    "observed_time": {
+      "start_at": "2026-08-22T16:40:00+00:00",
+      "end_at": null
+    },
+    "message": "Smoke is visible on the eastern ridge.",
+    "evidence_assets": [
+      {
+        "evidence_asset_id": "MEDIA-PHOTO-1",
+        "kind": "image",
+        "declared_media_type": "image/png",
+        "detected_media_type": "image/png",
+        "size_bytes": 1024,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ],
+    "consent": {
+      "analysis": true,
+      "retention": true,
+      "public_derivative": false
+    },
+    "provenance": {
+      "received_at": "2026-08-22T17:00:00+00:00",
+      "idempotency_key": "fixture-1",
+      "trace_id": "trace-fixture-1"
+    },
+    "external_observations": []
+  },
+  "localization_attempts": [
+    {
+      "attempt_id": "CANDIDATE-1",
+      "state": "PROPOSED",
+      "method": "camera_raycast",
+      "model_id": "localization-test",
+      "model_revision": "mvp-1",
+      "view_profile": "ground_distant_known_viewpoint",
+      "anchor": {
+        "anchor_id": "ANCHOR-1",
+        "phenomenon": "active_fire_point",
+        "perception": {
+          "anchor_id": "ANCHOR-1",
+          "evidence_asset_id": "MEDIA-PHOTO-1",
+          "source_point_normalized": [0.75, 0.5],
+          "source_geometry_normalized": null,
+          "model_id": "localization-test",
+          "model_revision": "mvp-1",
+          "model_score": 0.82
+        }
+      },
+      "geometry": {"type": "Point", "coordinates": [5.3705, 44.7505]},
+      "uncertainty": null,
+      "horizontal_uncertainty_m": 120,
+      "abstention_reason": null,
+      "provenance": {"reference_revision": "terrain-1"},
+      "updated_at": "2026-08-22T17:45:00+00:00"
+    }
+  ],
+  "prior_fire_activity_events": [
+    {
+      "event_id": "FIRE-STATE-1",
+      "state": "EDITOR_PUBLISHED",
+      "phenomenon_kind": "active_fire",
+      "observed_start_at": "2026-08-22T15:30:00+00:00",
+      "observed_end_at": null,
+      "geometry": {"type": "Point", "coordinates": [5.36, 44.745]},
+      "uncertainty": {"type": "Point", "coordinates": [5.36, 44.745]},
+      "method": "analyst_validation",
+      "version": 2,
+      "updated_at": "2026-08-22T16:00:00+00:00"
+    }
+  ],
+  "analysis_result_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@fireviewer/eve-point-supervisor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eve build",
+    "eval": "eve eval",
+    "info": "eve info",
+    "start": "eve start"
+  },
+  "dependencies": {
+    "ai": "7.0.77",
+    "eve": "0.44.1",
+    "zod": "4.4.3"
+  }
+}

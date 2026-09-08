@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fireviewer-evidence-supervisor"
+version = "0.1.0"
+description = "Evidence assessment, contradictions and accept/reject/abstain decisions."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "AGPL-3.0-or-later"
+dependencies = [
+  "fireviewer-contracts==0.1.0",
+  "fireviewer-evidence-ingestion==0.1.0",
+  "httpx==0.28.1",
+  "boto3==1.43.50"
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.3", "ruff==0.15.21", "jsonschema==4.26.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.yaml", "*.yml", "*.txt", "*.md", "py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+
+[project.scripts]
+fireviewer-supervisor = "fireviewer_evidence_supervisor.mvp.supervision.point_supervisor_cpu_service:main"
