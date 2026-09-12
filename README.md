@@ -1,15 +1,17 @@
 # fireviewer-evidence-supervisor
 
+> **Source active FV · private.** Eve, acceptation, rejet, abstention et contradictions. Voir [où travailler, quoi commiter et comment reprendre](ORGANISATION.md).
+
 Evidence assessment, contradictions and accept/reject/abstain decisions.
 
-Python package: `fireviewer_evidence_supervisor`. Version: `0.1.0`.
+Python package: `fireviewer_evidence_supervisor`. Version: `0.1.1`.
 
 ## Installation
 
 Install the versioned release wheels (including private FireViewer dependencies) from the release bundle. No sibling source checkout is required.
 
 ```sh
-python -m pip install --find-links /path/to/release/wheels fireviewer-evidence-supervisor==0.1.0
+python -m pip install --find-links /path/to/release/wheels fireviewer-evidence-supervisor==0.1.1
 python -m pytest tests -q
 ```
 
