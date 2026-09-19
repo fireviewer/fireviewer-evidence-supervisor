@@ -1,5 +1,17 @@
 # fireviewer-evidence-supervisor
 
+## Repères documentaires — 19 septembre 2026
+
+- **Rôle :** Évaluation structurée des preuves, contradictions et décisions `accept`, `reject`, `abstain`; héberge Eve.
+- **Statut :** Actif — package v0.1.1.
+- **Entrées :** Bundles de preuves et hypothèses référencées.
+- **Sorties :** Assessment structuré, support/contradiction/abstention sans mutation silencieuse des sources.
+- **Limites :** Le superviseur ne devient pas une autorité de publication et ne corrige pas des coordonnées par intuition. Les cas sensibles gardent validation humaine.
+
+[Fiche du dépôt](https://github.com/fireviewer/Fireviewer_doc/blob/main/docs/public/repositories/fireviewer-evidence-supervisor.md) · [Architecture](https://github.com/fireviewer/Fireviewer_doc/blob/main/docs/public/ARCHITECTURE.md) · [Statuts et vocabulaire](https://github.com/fireviewer/Fireviewer_doc/blob/main/docs/public/STATUTS_ET_VOCABULAIRE.md).
+
+Cette revue documentaire ne renouvelle aucun test ni aucune réception. Les procédures, versions et preuves techniques ci-dessous conservent leur périmètre et leur date.
+
 > **Source active FV · private.** Eve, acceptation, rejet, abstention et contradictions. Voir [où travailler, quoi commiter et comment reprendre](ORGANISATION.md).
 
 Evidence assessment, contradictions and accept/reject/abstain decisions.
