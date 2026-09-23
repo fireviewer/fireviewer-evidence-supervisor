@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fireviewer-evidence-supervisor"
-version = "0.1.1"
+version = "0.1.2"
 description = "Evidence assessment, contradictions and accept/reject/abstain decisions."
 readme = "README.md"
 requires-python = ">=3.11,<3.14"
 license = "AGPL-3.0-or-later"
 dependencies = [
-  "fireviewer-contracts==0.1.2",
-  "fireviewer-evidence-ingestion==0.1.1",
+  "fireviewer-contracts==0.1.3",
+  "fireviewer-evidence-ingestion==0.1.2",
   "httpx==0.28.1",
   "boto3==1.43.50"
 ]
